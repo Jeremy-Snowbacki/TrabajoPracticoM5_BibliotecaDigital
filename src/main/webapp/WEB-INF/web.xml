@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0"
+         metadata-complete="false">
+
+    <display-name>Biblioteca Digital UNTEC</display-name>
+    
+    <!-- Página de bienvenida -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlets -->
+    <servlet>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <servlet-class>com.biblioteca.servlets.UsuarioServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>LibroServlet</servlet-name>
+        <servlet-class>com.biblioteca.servlets.LibroServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>PrestamoServlet</servlet-name>
+        <servlet-class>com.biblioteca.servlets.PrestamoServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AgregarLibroServlet</servlet-name>
+        <servlet-class>com.biblioteca.servlets.AgregarLibroServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AgregarPrestamoServlet</servlet-name>
+        <servlet-class>com.biblioteca.servlets.AgregarPrestamoServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/UsuarioServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>LibroServlet</servlet-name>
+        <url-pattern>/LibroServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>PrestamoServlet</servlet-name>
+        <url-pattern>/PrestamoServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AgregarLibroServlet</servlet-name>
+        <url-pattern>/AgregarLibroServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AgregarPrestamoServlet</servlet-name>
+        <url-pattern>/AgregarPrestamoServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
